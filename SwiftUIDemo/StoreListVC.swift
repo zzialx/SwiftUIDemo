@@ -9,8 +9,33 @@ import SwiftUI
 
 struct StoreListVC: View {
     var body: some View {
-        na
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack(alignment: .leading, spacing: 30){
+                Text("123")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.orange);
+                Text("123")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.orange);
+                Text("12397979979")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.orange);
+            }
+            
+        }
+        .padding()
+        .navigationBarTitle("门店列表", displayMode: .inline)
+        .navigationBarItems(
+            leading:
+                       Button("返回") {
+                           
+                       },
+                           trailing:
+                               Button("添加") {
+                                   print("111")
+                               }
+                           
+                       )
     }
 }
 

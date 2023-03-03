@@ -86,7 +86,9 @@ struct ContentView: View {
                     Text("123")
                 }///<上下排列
                 ///
-                NavigationLink("首页", destination: StoreListVC(), isActive: $presetnKey)
+                ///  NavigationLink("Purple", destination: ColorDetail(color: .purple))
+//                NavigationLink("首页", destination: StoreListVC(), isActive: $presetnKey)
+                NavigationLink("首页", destination: LandmarkList(), isActive: $presetnKey)
 
                 Button(action: {
                             self.showToast.toggle()  ///<点击事件
@@ -121,8 +123,6 @@ struct ContentView: View {
             }
         }
         .navigationBarTitle("首页", displayMode: .inline)//设置标题，并固定到导航中间
-
-       
       
     }
 }
